@@ -1,190 +1,83 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexus Finance - Documentation</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f9f9f9;
-        }
-        .container {
-            background-color: #ffffff;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        h1 {
-            border-bottom: 2px solid #eaeaea;
-            padding-bottom: 10px;
-            color: #2c3e50;
-        }
-        h2 {
-            margin-top: 30px;
-            color: #34495e;
-            border-bottom: 1px solid #eaeaea;
-            padding-bottom: 5px;
-        }
-        ul, ol {
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 8px;
-        }
-        code {
-            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
-            background-color: #f6f8fa;
-            padding: 2px 5px;
-            border-radius: 3px;
-            font-size: 0.9em;
-            color: #d63384;
-        }
-        pre {
-            background-color: #1e1e1e;
-            color: #d4d4d4;
-            padding: 15px;
-            border-radius: 5px;
-            overflow-x: auto;
-            font-size: 0.9em;
-        }
-        pre code {
-            background-color: transparent;
-            color: inherit;
-            padding: 0;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 12px;
-            text-align: center;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-        .footer {
-            margin-top: 40px;
-            text-align: center;
-            font-size: 0.9em;
-            color: #777;
-        }
-        .emoji {
-            font-style: normal;
-        }
-    </style>
-</head>
-<body>
+# Nexus Finance 💰
 
-<div class="container">
-    <h1>Nexus Finance <span class="emoji">💰</span></h1>
+**Nexus Finance** is a smart, minimalist Android application designed to help users track their income and expenses effortlessly. It features a clean UI and integrates **AI-powered financial analysis** (via DeepSeek V3) to provide personalized insights, spending leak detection, and actionable savings plans.
 
-    <p><strong>Nexus Finance</strong> is a smart, minimalist Android application designed to help users track their income and expenses effortlessly. It features a clean UI and integrates <strong>AI-powered financial analysis</strong> (via DeepSeek V3) to provide personalized insights, spending leak detection, and actionable savings plans.</p>
+## ✨ Features
 
-    <h2><span class="emoji">✨</span> Features</h2>
-    <ul>
-        <li><strong>Dashboard Overview</strong>: Real-time view of Total Balance, Income, and Expenses.</li>
-        <li><strong>Transaction Management</strong>: Add, edit, and delete income or expense records.</li>
-        <li><strong>Smart Filtering</strong>: View transactions by Today, Week, Month, Year, or All time.</li>
-        <li><strong>AI Financial Auditor</strong>:
-            <ul>
-                <li>Uses <strong>DeepSeek V3 (via OpenRouter)</strong> to analyze your transaction history.</li>
-                <li>Generates an <strong>Executive Summary</strong> of your financial health.</li>
-                <li>Identifies <strong>Spending Leaks</strong> (categories draining your money).</li>
-                <li>Creates a personalized <strong>Action Plan</strong> to improve savings.</li>
-            </ul>
-        </li>
-        <li><strong>Privacy First</strong>: All transaction data is stored locally on the device using SQLite.</li>
-        <li><strong>Currency Support</strong>: Multi-currency toggling (BDT, USD, Euro).</li>
-    </ul>
+- **Dashboard Overview**: Real-time view of Total Balance, Income, and Expenses.
+- **Transaction Management**: Add, edit, and delete income or expense records.
+- **Smart Filtering**: View transactions by Today, Week, Month, Year, or All time.
+- **AI Financial Auditor**:
+  - Uses **DeepSeek V3 (via OpenRouter)** to analyze your transaction history.
+  - Generates an **Executive Summary** of your financial health.
+  - Identifies **Spending Leaks** (categories draining your money).
+  - Creates a personalized **Action Plan** to improve savings.
+- **Privacy First**: All transaction data is stored locally on the device using SQLite.
+- **Currency Support**: Multi-currency toggling (BDT, USD, Euro).
 
-    <h2><span class="emoji">🛠</span> Tech Stack</h2>
-    <ul>
-        <li><strong>Language</strong>: Kotlin</li>
-        <li><strong>UI</strong>: XML Layouts (ConstraintLayout, CoordinatorLayout, Material Design Components)</li>
-        <li><strong>Database</strong>: SQLite (Local Storage)</li>
-        <li><strong>AI Integration</strong>: OpenRouter API (DeepSeek V3 Model)</li>
-        <li><strong>Networking</strong>: Native <code>HttpURLConnection</code> (No heavy third-party networking libraries)</li>
-    </ul>
+## 🛠 Tech Stack
 
-    <h2><span class="emoji">🚀</span> Setup & Installation</h2>
-    <ol>
-        <li><strong>Clone the Repository</strong>
-            <pre><code>git clone https://github.com/yourusername/nexus-finance.git</code></pre>
-        </li>
-        <li><strong>Open in Android Studio</strong>
-            <ul>
-                <li>Open Android Studio.</li>
-                <li>Select <strong>File > Open</strong> and navigate to the cloned project folder.</li>
-                <li>Let Gradle sync the project dependencies.</li>
-            </ul>
-        </li>
-        <li><strong>Configure API Key</strong>
-            <ul>
-                <li>Get your free/paid API Key from <a href="https://openrouter.ai/" target="_blank">OpenRouter</a>.</li>
-                <li>Open <code>MainActivity.kt</code>.</li>
-                <li>Find the <code>API_KEY</code> variable at the top of the class:
-                    <pre><code>private val API_KEY = "sk-or-v1-your-key-here"</code></pre>
-                </li>
-                <li>Replace the placeholder with your actual key.</li>
-            </ul>
-        </li>
-        <li><strong>Run the App</strong>
-            <ul>
-                <li>Connect your Android device or start an Emulator.</li>
-                <li>Click the <strong>Run</strong> button (Green Play Icon).</li>
-            </ul>
-        </li>
-    </ol>
+- **Language**: Kotlin  
+- **UI**: XML Layouts (ConstraintLayout, CoordinatorLayout, Material Design Components)  
+- **Database**: SQLite (Local Storage)  
+- **AI Integration**: OpenRouter API (DeepSeek V3 Model)  
+- **Networking**: Native `HttpURLConnection` (No heavy third-party networking libraries)  
 
-    <h2><span class="emoji">📸</span> Screenshots</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Dashboard</th>
-                <th>Add Transaction</th>
-                <th>AI Report</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><em>(Place screenshot here)</em></td>
-                <td><em>(Place screenshot here)</em></td>
-                <td><em>(Place screenshot here)</em></td>
-            </tr>
-        </tbody>
-    </table>
+## 🚀 Setup & Installation
 
-    <h2><span class="emoji">🤖</span> AI Configuration</h2>
-    <p>The app is currently configured to use <strong>DeepSeek V3</strong> via OpenRouter. You can change the model in <code>MainActivity.kt</code>:</p>
-    <pre><code>private val MODEL_NAME = "nex-agi/deepseek-v3.1-nex-n1:free"</code></pre>
-    <p>To switch back to Google Gemini or another provider, simply update the <code>callOpenRouterAPI</code> function or the model string accordingly.</p>
+1. **Clone the Repository**  
+   ```bash
+   git clone https://github.com/yourusername/nexus-finance.git
+   ```
 
-    <h2><span class="emoji">🤝</span> Contributing</h2>
-    <p>Contributions are welcome!</p>
-    <ol>
-        <li>Fork the project.</li>
-        <li>Create your Feature Branch (<code>git checkout -b feature/AmazingFeature</code>).</li>
-        <li>Commit your changes (<code>git commit -m 'Add some AmazingFeature'</code>).</li>
-        <li>Push to the Branch (<code>git push origin feature/AmazingFeature</code>).</li>
-        <li>Open a Pull Request.</li>
-    </ol>
+2. **Open in Android Studio**  
+   - Open Android Studio.  
+   - Select **File > Open** and navigate to the cloned project folder.  
+   - Let Gradle sync the project dependencies.
 
-    <h2><span class="emoji">📄</span> License</h2>
-    <p>Distributed under the MIT License. See <code>LICENSE</code> for more information.</p>
+3. **Configure API Key**  
+   - Get your free/paid API Key from [OpenRouter](https://openrouter.ai/).  
+   - Open `MainActivity.kt`.  
+   - Find the `API_KEY` variable at the top of the class:
+     ```kotlin
+     private val API_KEY = "sk-or-v1-your-key-here"
+     ```
+   - Replace the placeholder with your actual key.
 
-    <div class="footer">
-        <p><em>Built with <span class="emoji">❤️</span> by Sezan</em></p>
-    </div>
-</div>
+4. **Run the App**  
+   - Connect your Android device or start an Emulator.  
+   - Click the **Run** button (Green Play Icon).
 
-</body>
-</html>
+## 📸 Screenshots
+
+| Dashboard | Add Transaction | AI Report |
+|-----------|------------------|-----------|
+| *(Place screenshot here)* | *(Place screenshot here)* | *(Place screenshot here)* |
+
+## 🤖 AI Configuration
+
+The app is currently configured to use **DeepSeek V3** via OpenRouter. You can change the model in `MainActivity.kt`:
+
+```kotlin
+private val MODEL_NAME = "nex-agi/deepseek-v3.1-nex-n1:free"
+```
+
+To switch back to Google Gemini or another provider, simply update the `callOpenRouterAPI` function or the model string accordingly.
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the project.  
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`).  
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).  
+4. Push to the Branch (`git push origin feature/AmazingFeature`).  
+5. Open a Pull Request.
+
+## 📄 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+---
+
+*Built with ❤️ by Sezan*
