@@ -14,7 +14,7 @@ import com.example.nexusfinance.model.Message
 object OpenRouterClient {
     private const val TAG = "OpenRouterClient"
     private const val API_URL = "https://openrouter.ai/api/v1/chat/completions"
-    const val API_KEY = "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"
+    const val API_KEY = ""
     private const val MODEL = "poolside/laguna-xs-2.1:free"
 
     suspend fun chatWithAI(messages: List<Message>, financeContext: String): String {
