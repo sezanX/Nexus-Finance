@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:layout_gravity="bottom"
+    android:layout_marginHorizontal="24dp"
+    android:layout_marginBottom="24dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/llNavPill"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/bg_nav_pill"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="8dp">
+
+        <ImageView
+            android:id="@+id/ivNavHome"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_home_luxury"
+            app:tint="#A0A0A0" />
+
+        <ImageView
+            android:id="@+id/ivNavLogs"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_logs_pro"
+            app:tint="#A0A0A0" />
+
+        <ImageView
+            android:id="@+id/ivNavStats"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_stats_luxury"
+            app:tint="#A0A0A0" />
+
+        <ImageView
+            android:id="@+id/ivNavProfile"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_profile_luxury"
+            app:tint="#A0A0A0" />
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddTransaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_add_luxury"
+        app:backgroundTint="@color/accent_red"
+        app:tint="@color/card_white"
+        app:elevation="0dp"
+        app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full" />
+
+</LinearLayout>

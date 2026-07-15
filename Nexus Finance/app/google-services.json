@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "432137914747",
+    "project_id": "nexus-finance-3ea1d",
+    "storage_bucket": "nexus-finance-3ea1d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:432137914747:android:22934c524515cfe34d55de",
+        "android_client_info": {
+          "package_name": "com.example.nexusfinance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "432137914747-cbss7h4a2hbrq5v5320i0uksia37rcun.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nexusfinance",
+            "certificate_hash": "0e0c0de6f06c2ce74ab92e5656277064b72f0d22"
+          }
+        },
+        {
+          "client_id": "432137914747-76m5qnmpiro49o7qalh3j6vmnnflq0l4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGWcHfjdQ-kwbwFQYV4aSRO_zozrTE2bo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "432137914747-76m5qnmpiro49o7qalh3j6vmnnflq0l4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

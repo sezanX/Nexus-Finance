@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <!-- Colorful professional gradient for the border -->
+            <gradient
+                android:angle="45"
+                android:startColor="#8A2387"
+                android:centerColor="#E94057"
+                android:endColor="#F27121"
+                android:type="linear" />
+            <corners android:radius="28dp" />
+        </shape>
+    </item>
+    <item android:bottom="2dp" android:left="2dp" android:right="2dp" android:top="2dp">
+        <shape android:shape="rectangle">
+            <!-- Solid color matching the app's dark theme / card background if needed -->
+            <!-- But wait, it was card_white before. -->
+            <solid android:color="@color/card_white" />
+            <corners android:radius="26dp" />
+        </shape>
+    </item>
+</layer-list>
