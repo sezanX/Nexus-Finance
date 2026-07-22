@@ -195,7 +195,7 @@ Nexus Finance provides:
 | FR-24 | The user can restore the latest backup from Google Drive app data. |
 | FR-25 | Backup includes transactions, budgets, and currency setting. |
 | FR-26 | Backup excludes private API keys. |
-
+<!--
 ### AI Report
 
 | Requirement ID | Description |
@@ -205,7 +205,7 @@ Nexus Finance provides:
 | FR-29 | The app can generate an AI finance report if an API key is available. |
 | FR-30 | The app uses the OpenRouter model `openrouter/free`. |
 | FR-31 | AI reports are optional and disabled when no API key is available. |
-
+-->
 ## 9. Non-Functional Requirements
 
 | Category | Requirement |
