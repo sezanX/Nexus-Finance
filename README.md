@@ -9,11 +9,12 @@ Last updated: May 3, 2026
 
 Prepared by:
 
-- Student name: ______________________________
-- Student ID: ________________________________
-- Department: ________________________________
-- University: ________________________________
-- Instructor: ________________________________
+- Student name: Sezan Mahmood
+- Student ID: 100 241 005101 006
+- Department: Computer Science & Engineering
+- University: Khulna Khan Bahadur Ahsanullah University.
+- Instructor: <a href="https://www.kkbau.ac.bd/departments/cse/musfiq-shahriar-shafi/"> Mushfiq Shahrier Shafi </a>
+- Designation: Lecturer, Department of CSE & Proctor (In-charge)
 
 ## Table of Contents
 
