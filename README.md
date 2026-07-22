@@ -1,6 +1,7 @@
 # Nexus Finance Project Documentation
 
-Course: Software Development  
+Course: Software Development -III
+Course ID : CSE 061 2212
 Project: Nexus Finance  
 Platform: Android  
 Language: Kotlin  
